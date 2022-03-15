@@ -8,6 +8,7 @@ h1
     font-size: 35px;
     font-weight: 700;
     left: 0px;
+    letter-spacing: 10px;
 }
 
 h2
@@ -20,6 +21,7 @@ h2
     font-weight: 700;
     height: 30px;
     left: 0px;
+    letter-spacing: 10px;
     line-height: 144.69%;
     position: absolute;
     width: 1440px;
