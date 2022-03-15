@@ -11,6 +11,8 @@ h1
     letter-spacing: 10px;
 }
 
+.cv{margin-bottom: 180px;}
+
 h2
 {
     background-color: #c4c4c4;
@@ -28,9 +30,19 @@ h2
 }
 span{font-size: 15px;}
 li{font-size: 15px;}
-div{margin-bottom: 180px;}
+
 
 .negrita{font-weight: bold;}
 .cursiva{font-style: italic;}
 .simple{font-weight:400;
     font-style:normal;}
+
+footer
+{
+    background-color:#005677;
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+    color: #FFFFFF;
+
+}
