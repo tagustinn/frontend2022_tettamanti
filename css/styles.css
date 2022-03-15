@@ -1,0 +1,13 @@
+.parrafo{color: blue;
+    text-align: justify;
+}   
+
+.encabezado{
+    color:rgba(112, 147, 163, 0.87);
+    font-size: 36px;
+    text-align: center;
+}
+
+/*Aplica a parrafos con la clase encabezado, que a su vez sean hijos de una seccion*/
+section p.encabezado{font-size: 50px;}
+p.encabezado{font-size: 100px;}
