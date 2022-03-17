@@ -1,48 +1,29 @@
-header{text-align: center;}
+@import url(https://use.fontawesome.com/releases/v6.1.0/css/all.css);
 
-h1
-{
-    background-color: #c4c4c4;
-    color: #005677;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    font-weight: 700;
-    left: 0px;
-    letter-spacing: 10px;
+.container {
+    border: 2px solid black;
+    height: 80px;
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 20px;;
 }
 
-.cv{margin-bottom: 180px;}
+.fondo {
+    background-image: url('/img/banner.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    }
 
-h2
-{
-    background-color: #c4c4c4;
-    color: #005677;
-    font-family: 'Times New Roman';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    height: 30px;
-    left: 0px;
-    letter-spacing: 10px;
-    line-height: 144.69%;
-    position: absolute;
-    width: 1440px;
-}
-span{font-size: 15px;}
-li{font-size: 15px;}
+.imgcv {
+        border: 1px solid #ddd;/*le agrega borde a la imagen*/
+        border-radius: 4px;/*redondea el borde de la imagen*/
+        padding: 5px;/*Crea el espacio entre el borde y la imagen propiamente dicha*/
+        width: 100px;/*Achica la imagen*/
+        display: block;/*me permite tratarlo como*/
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;}
 
 
-.negrita{font-weight: bold;}
-.cursiva{font-style: italic;}
-.simple{font-weight:400;
-    font-style:normal;}
 
-footer
-{
-    background-color:#005677;
-    text-align: center;
-    font-weight:bold;
-    font-size: 20px;
-    color: #FFFFFF;
-
-}
