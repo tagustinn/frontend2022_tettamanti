@@ -55,3 +55,49 @@ span.alignright
     width: 100%;
     margin-top: 0px;
 }
+
+section.banner p
+{   
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+    right: 200px;
+    top: 315px;
+}
+section.banner div
+{   
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+
+    background-color: white;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 5px;
+
+    position: absolute;
+    right: 130px;
+    top: 235px;
+}
+
+a
+{
+    background-color: #F0A83E;
+    border-radius:5px;
+    color:white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: 38.52px; 
+    text-decoration: 0;
+    width: 111.78px;
+    line-height: 35px;
+    position: absolute;
+    left: 1000px;
+    top: 365px;
+    /*cómo poner el texto en el centro*/
+}
+
