@@ -1,54 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 @import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
-body{
-    font-family:'Poppins', sans-serif}
-a{
-    color: white;
-    text-decoration: none;
-}
-.cabecera
+
+header
 {
-    background-image: url(/img/logo.png), url(/img/baticueva.png);
-    background-position:top ;
-    background-repeat: no-repeat;
-    background-size: auto,cover;
-    background-color:#e6e6e6;
-    height: 180px;
-    width: 100%; 
-    background-attachment:fixed,scroll;
-}
-.titulo
-{  
-    text-align: center; 
-    letter-spacing: 10px; 
-    font-size: 32px;
+    display:flex;
+    background-color: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 
 }
 
-.espacio
-{
-    height: 180px;
-}
-.subtitulo 
-{
-    font-size: 20px;
-    text-align: left;
-    letter-spacing: 8px;
-}
-.titulo,.subtitulo
-{
-    font-family: 'Montserrat', sans-serif;
-    color: #005677;
-    text-transform:capitalize;
-    background-color: #c4c4c4;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-span{
-    font-weight: 700;
-    font-style: italic;
-}
-footer{
-    background-color: #005677;
-    text-align: center;
-    color:white;
+header ul li{
+    justify-content: flex-end;
+    display: flex;
 }
