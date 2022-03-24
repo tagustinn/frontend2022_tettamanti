@@ -101,3 +101,8 @@ a
     /*cómo poner el texto en el centro*/
 }
 
+section.destacado
+{
+    margin-top: 20px;
+    position: absolute;
+}
