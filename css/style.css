@@ -56,7 +56,7 @@ html{
 /*------------ Hasta ACÁ LO DEL ENCABEZADO-----------------------*/
 .banner
 {
-    background-image: url('/img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-image: url('/img/bowl-and-pet-daities-on-green-background\ 1\ \(1\).png');
     display: flex;
     background-repeat: no-repeat;
     background-size:cover;
@@ -131,17 +131,17 @@ html{
     width: 100%;  
 }
 .item1{
-    background-image: url('/img/churrasquito\ \(1\).png')
+    background-image: url('/img/churrasquito\ \(2\).png')
     ;height: 268px;
     width: 265px;
 }
 .item2{
-    background-image:url('/img/comedero\ \(1\).png');
+    background-image:url('/img/comedero\ \(2\).png');
     height: 268px;
     width: 265px;
 }
 .item3{
-    background-image:url('/img/Huesito\ \(1\).png');
+    background-image:url('/img/Huesito\ \(2\).png');
     height: 268px;
     width: 265px;
 }
