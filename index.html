@@ -25,7 +25,7 @@
                 <img src="/img/Logo (4).png" alt="Logo encabezado">
             </div>
             <div class="encabezado2">
-                <span><i class="fa-light fa-paw"></i></i>Categorias</span>
+                <span><i class="fa-solid fa-paw"></i>Categorias</span>
                 <span><i class="fa-solid fa-paw"></i>Pets</span>
                 <span><i class="fa-solid fa-paw"></i>Nosotros</span>
                 <span><i class="fa-solid fa-paw"></i>Contacto</span>
@@ -83,21 +83,39 @@
 
         <section class="contactanos"> 
         <form action="/formulario" method="post">
+        <div class="consu"> 
+
+        <fieldset>Motivo de consulta 
+            <select name="motivo" id="motivo" required> 
+                <option value="">Seleccione el motivo</option>
+                <option value="Juguete">Juguete</option>
+                <option value="Comidas">Comidas</option>
+                <option value="Veterinaras">Veterinaras</option>
+                <option value="Vacunas">Vacunas</option>
+                <option value="Higiene">Higiene</option>
+                <option value="Higiene">Otros</option>
+            </select> 
+            <textarea name="consulta" id="consulta" cols="30" rows="10">
+            </textarea>
                 <h2>Contáctanos</h2>
                 <div class="formulario">
-                    <input type="text" placeholder="Nombre y Apellido">
-                    <input type="text" placeholder="Ingresa tu correo electronico">
-                    <input type="text" placeholder="Telefono">
+                    <label for="nya">Nombre y Apellido</label>
+                    <input id="nya" type="text" placeholder="Ingrese su nombre y apellido" required>
+                    <label for="mail">Email</label>
+                    <input id="mail" type="email" placeholder="Ingrese su correo electronico" required>
+                    <label for="tel">Telefono</label>
+                    <input id='tel' type="tel" placeholder="Ingrese su telefono" required>
                 </div>
+            </fieldset>
         </section>
+        
+
         <div class="botones">
                 <button type="reset" class="boton-gris">Resetear</button>
                 <button type="submit" class="boton-naranja">Enviar</button>
         </div>
-    </form>
-
-    </main>
-
+    </form> 
+    </main> 
     <footer>
         <div class="footer1">
             <p><i class="fa-solid fa-envelope"></i>Suscríbete para más novedades</p>
