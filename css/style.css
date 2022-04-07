@@ -46,6 +46,21 @@ html{
     height: 62px;   
     font-size: 1.6rem;
 }
+
+.encabezado1 h1{
+    color: black;
+}
+.encabezado1 span{
+    color: white;
+}
+
+.encabezado1 h1::before{
+    content: url(/img/Cat.png);
+}
+.encabezado1 h1::after{
+    content: url(/img/Dog.png);
+}
+
 .encabezado1
 {
     margin-left: 40px;
@@ -55,6 +70,10 @@ html{
     margin-right: 40px; 
     display: flex;
     gap: 25PX;
+}
+div.encabezado2 span::before
+{
+    content: url('/img/pawprint\ 2.png');
 }
 /*------------ Hasta ACÁ LO DEL ENCABEZADO-----------------------*/
 .banner
@@ -402,5 +421,11 @@ div.footer1 input{
 div.footer2 img{
     order: -1;
     padding-left: 6.5rem;
+}
+
+.banner
+{
+    background-image: url('/img/Full\ 1.png');
+ 
 }
 }
