@@ -381,7 +381,7 @@ div.footer3
     }
 form input{
     height: 2.5rem;
-    width:22rem;
+    width:80vw;
     gap: 10px;
 }
 .boton-marron
@@ -396,7 +396,9 @@ div.footer2
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
+div.footer1 input{
+    width:12rem ;
+}
 div.footer2 img{
     order: -1;
     padding-left: 6.5rem;
