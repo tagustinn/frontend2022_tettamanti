@@ -41,7 +41,7 @@ section.presentacion p{
     padding: 1rem 3rem 3rem;
     line-height: 2.7rem;
 }
-a{
+section.presentacion a{
     height:4rem;
     width: 12.4rem; 
     border-radius: 50px;
@@ -66,4 +66,37 @@ section.diferenciacion p{
     padding: 1rem 3rem 3rem;
     line-height: 2.7rem;
 }
+section.items p{
+    color:gray;
+    font-size: 1.3rem;
+    text-align: left;
+    padding-right: 2rem;
+    line-height: 2.7rem;
+}
+.item1,.item2,.item3{
+border: 3px solid black;
+height: 20rem;
+margin-bottom: 5rem;
+}
 
+section.items a{
+    height:4rem;
+    width: 6.5rem; 
+    border-radius: 30px;
+    background-color: #F3603B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+div.titulo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+div.titulo span{
+    background-color: rgb(238, 218, 215);
+}
