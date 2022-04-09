@@ -1,8 +1,7 @@
 @import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: content-box;
@@ -10,423 +9,61 @@
 html{
     font-size: 62.5%;
 }
-.hamburguesa
-{
-    display: none;
+body{
+    background-image: url('/img/bg-tablet-pattern.svg');
+    background-size: contain     ;
 }
-.contenedor
-{
-    align-items: center;
-    color: white;
+section.graficos img{
+    width: 100vw;
+}
+/*Header -- Solo contiene titulo y ///Hamburguesa */
+header{
     display: flex;
+    margin: 3rem 0;
     justify-content: space-between;
+    padding: 0 2rem;
 }
-
-.header
-{
-    background-color: black;
-    font-size: 1rem;
-    height: 20px;
-}
-.header1
-{
-    margin-left: 90px;
-}
-.header2
-{
-    margin-right: 52px; 
+/*Seccion Presentacion*/
+section{
     display: flex;
-    gap: 25PX;
-}
-
-/*------------ Hasta ACÁ LO DEL HEADER-----------------------*/  
-.encabezado
-{
-    background-color:#F0A83E;
-    height: 62px;   
-    font-size: 1.6rem;
-}
-
-.encabezado1 h1{
-    color: black;
-}
-.encabezado1 span{
-    color: white;
-}
-
-.encabezado1 h1::before{
-    content: url(/img/Cat.png);
-}
-.encabezado1 h1::after{
-    content: url(/img/Dog.png);
-}
-
-.encabezado1
-{
-    margin-left: 40px;
-} 
-.encabezado2
-{
-    margin-right: 40px; 
-    display: flex;
-    gap: 25PX;
-}
-div.encabezado2 span::before
-{
-    font-family: FontAwesome;
-    content: '\f1b0'; 
-}
-/*------------ Hasta ACÁ LO DEL ENCABEZADO-----------------------*/
-.banner
-{
-    background-image: url('/img/bowl-and-pet-daities-on-green-background\ 1\ \(1\).png');
-    display: flex;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 409px;
-    background-position: center;
-    margin-top: 0px;
-    align-items: flex-end;
     flex-direction: column;
-    justify-content:center;
-    gap:12px;
 }
-.banner1
-{
-    align-items: center;
-    background-color: white;
-    border-radius: 5px;
+h1,h2{
+    color:#232c51;
+    font-size:  4rem;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+section.presentacion p{
+    color:gray;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1rem 3rem 3rem;
+    line-height: 2.7rem;
+}
+a{
+    height:4rem;
+    width: 12.4rem; 
+    border-radius: 50px;
+    background-color: #F3603B;
     display: flex;
-    font-size: 3rem;
-    height: 54px;
-    margin-right: 12px;
-}
-
-.banner2
-{
-    font-size: 1.6rem;
-    margin-right: 80px;
-
-}
-.banner3 a{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    color: white;
-}  
-.banner3
-{
-    align-items: center;
-    background-color: #F0A83E;
-    border-radius: 5px;
-    display: flex;
-    font-size: 1.6rem;
-    height: 49px;
-    justify-content: center;
-    margin-right: 80px;
-    width: 141px;
-    margin-right: 100px;
-}
-/*------------ Hasta ACÁ LO DEL BANNER-----------------------*/
-.destacado
-{
-    height: 230px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.destacado2
-{
-    font-size: 4rem;
-    font-weight: bold;
-}
-.destacado3
-{
-    display: flex;
-    font-size: 1.5rem;
-    gap: 25PX;
-}
-/*------------ Hasta ACÁ LO DEL DESTACADO-----------------------*/
-.items
-{
-    align-items: center;
-    display: flex;
-    justify-content:space-evenly; 
-    margin-top: 50px;
-    width: 100%;  
-}
-.item1{
-    background-image: url('/img/churrasquito\ \(2\).png')
-    ;height: 268px;
-    width: 265px;
-}
-.item2{
-    background-image:url('/img/comedero\ \(2\).png');
-    height: 268px;
-    width: 265px;
-}
-.item3{
-    background-image:url('/img/Huesito\ \(2\).png');
-    height: 268px;
-    width: 265px;
-}
-.texto {
-    position: relative;
-    top: 25rem;
-}
-.item1 p, .item2 p, .item3 p
-{
-    height: 23px;
-    background-color: #FBFAF6;
-    font-size: 1.5rem;
-    font-weight:700;
-    text-align: center;
-}
-.amarillo
-{   color:#F0A83E
-}/*------------ Hasta ACÁ LO DE ITEMS DESTACADOS-----------------------*/
-
-.contactanos
-{
-    display: flex;
-    flex-direction: column;
-    margin-top:80px;
-    align-items: center;
-}
-.formulario
-{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 41px;
-    font-size: 0.9rem;
-    left: 10px;
-}
-
-textarea
-{
-    resize: none;
-}
-fieldset
-{
-    display: flex;
-    flex-direction: column;
-    border-color:transparent;
-    font-size: 2.5rem;
-    font-weight: bold;
+    margin: 0 0 10rem 12.5rem;
 } 
-
-input
-{
-    background-color: #3C2313;
-    height: 40px;
-    width: 340px;  
-    border-radius: 15px;
-    color: white;
-    font-size: 0.9rem;
-}
 h2{
-    font-size: 2.5rem;
-}
-.botones
-{
-    display: flex;
-    justify-content: center;
-    gap:20px
+    font-size: 3rem;
+    padding: 0 4rem;
 }
 
-div.botones button{
-    font-size: 1.6rem;
-    height: 34px;
-    width: 110px; 
-    border-radius: 15px;
-    color: white;
-    margin-bottom: 75px;
-    border: none;
-}
-.boton-gris
-{
-    background-color: #8A8787;
-}
-.boton-naranja
-{
-    background-color: #F0A83E;
-
-}
-/*------------ Hasta ACÁ LO DEL FORMULARIO CONTACT-----------------------*/
-div.footer1
-{
-    display: flex;  
-    height: 60px;
-    background-color:#F0A83E; 
-    align-items: center;
-    justify-content: space-between;
-}
-div.footer1 p
-{
-    font-size: 2rem;
-    color: white;
-    font-weight: bold;
-    margin-left: 23px;
-}
-
-div.footer1 input
-{
-    background-color:white;
-    color: #A0A0A0; 
-    border: none;
-}
-
-.boton-marron
-{
-    background-color:#3C2313;
-    height: 34px;
-    width: 70px; 
-    border: none;
-    color: white;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    margin-right: 30px;
-}
-
-div.footer2
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 284px;
-    background-color: #3C2313;
-}
-
-p.grande
-{
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 20px;
-}
-p.chico
-{
-    color:#8A8787;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 50px;
-}
-
-.informacion
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-div.footer2 img
-{
-    margin-right: 70px;
-}
-
-div.footer3
-{   
-    height: 20px;
-    background-color:black;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
+section.diferenciacion p{
+    color:gray;
+    font-size: 1.5rem;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem 3rem 3rem;
+    line-height: 2.7rem;
 }
 
-
-@media (max-width:400px)
-{
-    .encabezado{
-        height:40px ;
-    }
-    .header1{
-        margin-left: 5px;
-    }
-    .encabezado2, header{ 
-        display: none;
-    }
-
-    .header{
-        display: none;
-
-    }
-    .hamburguesa{
-        display:flex;
-        margin-right: 10px;
-    }
-    .banner1{
-        font-size: 2rem;
-        height: 3rem;
-    }
-    .banner2{
-        font-size: 1.25rem;
-        margin-right: 6rem;
-        font-weight: bold;
-        text-decoration:underline;
-        font-style: italic;
-    }
-    .banner3{
-        margin-right: 6.2rem;
-    }
-    .banner{
-        gap: 40px;
-    }
-    .destacado p{
-        text-align: center;
-        font-size: 3.7rem;
-    }
-    .destacado3{
-        font-size: 1.3rem;
-    }
-    .items{
-        flex-direction: column;    
-    }
-    .item1,.item2{
-        margin-bottom: 5rem;
-    }
-    select,textarea,input,.formulario{
-        width: 80vw;
-    }
-
-    div.footer1 p{
-        font-size: 1.4rem;
-    }
-    div.footer1{
-        flex-direction: column;
-    }
-form input{
-    height: 2.5rem;
-    width:80vw;
-    gap: 10px;
-}
-.boton-marron
-{
-    height: 2.5rem;
-    width:6rem;
-    margin-bottom:15px ;
-}
-div.footer2
-{
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-div.footer1 input{
-    width:12rem ;
-}
-div.footer2 img{
-    order: -1;
-    padding-left: 6.5rem;
-}
-
-.banner
-{
-    background-image: url('/img/Full\ 1.png');
- 
-}
-}

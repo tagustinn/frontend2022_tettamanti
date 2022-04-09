@@ -4,143 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Pet Shop - Ejercicio 8s</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Entrega Final Tettamanti</title>
 </head>
-
-<body> 
-    <header class="contenedor header">
-        <div class="header1">
-            <span>Grandes ofertas en comederos</span>
-        </div>
-        <div class="header2">
-            <span>Español<i class="fa-solid fa-caret-down"></i></i></span>
-            <span>ARG$<i class="fa-solid fa-caret-down"></i></i></span>
-        </div>
-    </header>
-
+<body>
+    <header>
+        <img src="/img/logo.svg" alt="">
+        <img src="/img/icon-hamburger.svg" alt="Hamburguesa menu">
+    </header>  
     <main>
-        <section class="contenedor encabezado">
-            <div class="encabezado1">
-                <h1>Front <span>Cat&Dog</span></h1>
-            </div>
-            <div class="encabezado2">
-                <span>Categorias</span>
-                <span>Pets</span>
-                <span>Nosotros</span>
-                <span>Contacto</span>
-            </div>
-            
-            <div class="hamburguesa"><i class="fa-solid fa-bars"></i></div>
+        <section class="graficos">
+            <img src="/img/illustration-intro.svg" alt="Graficos">
         </section>
-
-        <section class="banner">  
-            <div class="banner1">
-                ¡Es un palcer tenerte aquí!
-            </div>
-            <div class="banner2">
-                ¡Comederos en descuento!
-            </div>
-            <div class="banner3">
-                <a href="#">COMEDEROS</a>
-            </div>
+        <section class="presentacion">
+            <h1>Bring everyone together to build better products.</h1>
+            <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the large team goals in view.
+            </p> 
+            <a href="#">Get Started</a> 
         </section>
-
-        <section class="destacado">
-            <div class="destacado1">
-                <img src="/img/pawprint 1 (2).png" alt="">
-            </div>
-            <div class="destacado2">
-                <p>Productos Destacados</p>
-            </div>
-            <div class="destacado3">
-                <span>Comederos</span>
-                <span>-</span>
-                <span>Accesorios</span>
-                <span>-</span>
-                <span>Comida</span>
-            </div>
+        <section class="diferenciacion">
+            <h2>What´s different aboutManage? </h2>
+            <p>
+            Manage provides all the functionality your teas needs, without
+            the complexity.Our software is tailor-made for modern digital
+            product teams.
+            </p>
         </section>
+    </main>
 
-        <section class="items">
-                <div class="item1">
-                    <article class="texto">
-                        <p>Juguete Churrasquito</p>
-                        <p class="amarillo">$150</p>
-                    </article>
-                </div>
-                <div class="item2">
-                    <article class="texto">
-                        <p>Comedero para perro</p>
-                        <p class="amarillo">$250</p>
-                    </article>
-                </div>
-                <div class="item3">
-                    <article class="texto">
-                        <p>Juguete huesito</p>
-                        <p class="amarillo">$650</p>
-                    </article>
-                </div>
-        </section>
-
-        <section class="contactanos"> 
-        <form action="/formulario" method="post">
-        <div class="consu"> 
-
-        <fieldset>Motivo de consulta 
-            <select name="motivo" id="motivo" required> 
-                <option value="">Seleccione el motivo</option>
-                <option value="Juguete">Juguete</option>
-                <option value="Comidas">Comidas</option>
-                <option value="Veterinaras">Veterinaras</option>
-                <option value="Vacunas">Vacunas</option>
-                <option value="Higiene">Higiene</option>
-                <option value="Higiene">Otros</option>
-            </select> 
-            <textarea name="consulta" id="consulta" cols="30" rows="10">
-            </textarea>
-                <h2>Contáctanos</h2>
-                <div class="formulario">
-                    <label for="nya">Nombre y Apellido</label>
-                    <input id="nya" type="text" placeholder="Ingrese su nombre y apellido" required>
-                    <label for="mail">Email</label>
-                    <input id="mail" type="email" placeholder="Ingrese su correo electronico" required>
-                    <label for="tel">Telefono</label>
-                    <input id='tel' type="tel" placeholder="Ingrese su telefono" required>
-                </div>
-            </fieldset>
-        </section>
-        
-
-        <div class="botones">
-                <button type="reset" class="boton-gris">Resetear</button>
-                <button type="submit" class="boton-naranja">Enviar</button>
-        </div>
-    </form> 
-    </main> 
+    
+    
     <footer>
-        <div class="footer1">
-            <p><i class="fa-solid fa-envelope"></i>Suscríbete para más novedades</p>
-            <form action="/formulario" method="post">
-                <input type="text" placeholder="Ingresa tu correo electronico">
-                <button type="submit" class="boton-marron">Suscribirme</button>
-            </form>
-        </div>
-        <div class="footer2">
-            <div class="informacion">
-                <p class="grande"><i class="fa-solid fa-location-dot fa-2x"></i>Localidad</p>
-                <p class="chico">Calle-provincia</p>
-                <p class="grande"><i class="fa-solid fa-phone fa-2x"></i></i>Telefono</p>
-                <p class="chico">Numero de telefono</p>
-                <p class="grande"><i class="fa-solid fa-at fa-2x"></i></i>Correo Electrónico</p>
-                <p class="chico">Dirección de correo</p>
-            </div>
-            <img src="img/Logo (5).png" alt="logo">
-        </div>
-        <div class="footer3">
-            <p>Todos los derechos reservados Front End - Agustin Tettamanti</p>
-        </div>
-    </footer> 
-</body>
-</html> 
 
+    </footer>
+
+</body>
+</html>
