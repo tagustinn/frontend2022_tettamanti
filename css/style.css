@@ -1,7 +1,7 @@
 @import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body{
     background-image: url('/img/bg-tablet-pattern.svg');
     background-size: contain     ;
 }
-section.graficos img{
+.graficos{
     width: 100vw;
 }
 /*Header -- Solo contiene titulo y ///Hamburguesa */
@@ -26,7 +26,12 @@ header{
 nav.headerDesktop,a.aheaderDesktop{
     display: none;
 }
-/*Seccion Presentacion*/
+/*Seccion Presentacion*/ 
+.graficos{
+    display: flex;
+    width:100vw;
+    flex-direction: column;
+}
 section.presentacion{
     align-items: center;
     display: flex;
@@ -46,23 +51,23 @@ section.presentacion p{
     text-align: center;
 }
 section.presentacion a,section.opiniones a{
-    align-items: center;
     background-color: #F3603B;
     border-radius: 50px;
-    color: white;
-    display: flex;
+    color: white; 
     font-weight: bold;
-    height:4rem;
-    justify-content: center;
+    padding:1.4rem 3rem; 
     margin: 0 0 10rem 0;
+    text-align: center;
     text-decoration: none;
     width: 12.4rem; 
 } 
 h2{
     font-size: 3rem;
     padding: 0 4rem;
-}
+    }
+    .box{
 
+    }
 section.diferenciacion p{
     color:gray;
     font-size: 1.4rem;
@@ -92,7 +97,7 @@ section.items a{
     display: flex;
     font-weight: bold;
     font-size: 1.7rem;
-    height:4rem;
+    padding: 1.4rem 3rem;
     justify-content: center;
     text-decoration: none;
     width: 7.5rem; 
@@ -103,7 +108,7 @@ div.titulo{
     display: flex;
     justify-content: flex-start;
 }
-div.titulo span{
+div.titulo h3{
     align-items: center;
     background-color:rgb(248, 225, 222);
     color: #232c51;
@@ -184,7 +189,7 @@ section.final a{
     color: #F3603B;
     display: flex;
     font-weight: bold; 
-    height:4rem;
+    padding: 1.4rem 3rem;
     justify-content: center;
     margin-top: 3rem;
     text-decoration: none;
@@ -198,6 +203,12 @@ footer{
     flex-direction: column;
     height: 60rem;
     justify-content: space-around;
+}
+
+.boxFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 nav.nav-footer{
     display: flex;
@@ -308,10 +319,21 @@ article{
     font-size: 1rem;
 }
 
+div.hidden{
+    display: none;
+}
+
 @media (min-width:420px)
 {
     header{
-        padding: 0 13rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center ;
     }
     .icon-hamburger{
         display: none;
@@ -322,6 +344,10 @@ article{
         font-size: 1.3rem;
         font-weight: 500;
         gap: 2rem;
+    }
+    nav.headerDesktop a{
+        text-decoration: none;
+        color: #242E52;
     }
     a.aheaderDesktop{
         align-items: center;    
@@ -334,8 +360,138 @@ article{
         justify-content: center;
         width: 12.4rem; 
         text-decoration: none;
+    }  
+    section.presentacion{
+        order: -1;
+        width:47%;
+        height: fit-content; 
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    section.presentacion h1{
+        width: 75%;
+    }
+    section.presentacion h1, section.presentacion p{
+        text-align: left;
+    } 
+    section.presentacion p{
+        margin: 2rem 0;
+        padding: 0 0 0 1.5rem;
+        width: 75%;
+    }
+    .presentacion{
+        width: 47vw;
+    }
+    .graficos{
+        width: 32vw;
+    }
+
+    section.presentacion a{
+        margin: 0 10rem; 
+    }
+    a{
+        transition:450ms;
+    }
+    a:hover{
+        transform: scale(1.3);
+    }
+    .box{
+        display: flex;
+        width: 79vw;
+        margin-top: 5rem;
+    }
+    .items{
+        width: 50%;
+    }
+    section.items{
+        margin: 0rem;
+    }
+    .diferenciacion{
+        height: fit-content;
+        width: 60%;
+        margin-right: 5rem;
+    }
+    .diferenciacion h2{
+        text-align: left;
+        justify-content: flex-start;
+        padding: 0 0 0 1.5rem;
+    }
+    section.diferenciacion p{
+        text-align: left;
+        padding-left:1.5rem
+    }
+
+
+
+
+
+
+
+    section.final{
+        width: 100vw;
+        height: 20rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    section.final p,section.final a{
+        padding: 0;
+        margin: 0;
+    }
+    section.final p{
+        width: 30vw;
+        font-size: 3rem;
+        text-align: left;
+    }
+    section.final a{   
+        padding:1.4rem 3rem;
+    }
+
+    footer{
+        flex-direction: row;
+        width: auto;
+        height: 20rem;
+        align-items: center;
+    }      
+    div.iconos {
+        width: 20vw;
+        order: 1;
+        justify-content: center;
+        gap: 1rem;
+    }
+    footer p{
+        padding: 0;
+    }
+    nav.nav-footer{
+        order: -1;
+    }
+    i.fa-brands{
+        font-size: 2rem;
+    }
+    div.boxFooter{
+        order:-2;
+    }
+    form input{
+        width: fit-content;
+    }
+    article.mobile, form.form{
+        display: none;
+    }
+    div.hidden{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 3rem;
+    }
+    form.hidden{
+        width: fit-content;
+        gap: 1rem;
+    }
+    form.hidden input{
+        border: none;
+        border-radius: 5rem;
+        height: 4rem;
+        padding:0 2rem; 
+        display: flex;
     }
 }
-
-
-
