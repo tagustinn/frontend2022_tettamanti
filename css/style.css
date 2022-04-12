@@ -65,7 +65,7 @@ h2{
     font-size: 3rem;
     padding: 0 4rem;
     }
-    
+
 section.diferenciacion p{
     color:gray;
     font-size: 1.4rem;
@@ -124,6 +124,9 @@ section.opiniones{
     display: flex;
     flex-direction: column;
 }
+section.opinionesDesktop{
+    display: none;
+}
 section.opiniones img{
     height: 6.5rem;
     margin-top: 5rem;
@@ -139,14 +142,13 @@ div.cuadro{
 div.cuadro{
     margin-top: -3.2rem;
 }
-div.cuadro span{    
+div.cuadro h3{    
     color: #232c51;
     display: flex;
     font-weight: bold; 
     font-size: 1.4rem;
     justify-content: center;
     margin-top: 5rem;
-
 }
 div.cuadro p{
     color:#B9B9C1;
@@ -418,6 +420,63 @@ div.hidden{
     section.diferenciacion p{
         text-align: left;
         padding-left:1.5rem
+    }
+    section.opiniones{
+        display: none;
+    }
+    section.opinionesDesktop{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.opinionesDesktop a{
+        align-items: center;    
+        background-color: #F3603B;
+        border-radius: 50px;
+        color: white;   
+        display:flex;
+        font-weight: bold;
+        height:4rem;    
+        justify-content: center;
+        width: 12.4rem; 
+        text-decoration: none;
+        margin: 3rem 0 15rem 0;
+    } 
+    div.exp{
+        display: flex;
+        margin-top: 8rem;
+        justify-content: space-evenly;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+    div.experiencias{
+        height: 22rem;
+        width: 40rem;
+        background-color:#FAFAFA;
+    }
+    div.experiencias p{
+        color:#B9B9C1;
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+        padding-right: 2rem;
+        padding-top: 6px;
+        text-align: center;
+        position: relative;
+    }
+    div.experiencias img{
+        position: relative;
+        bottom: 4rem;
+        left: 17rem;
+        height: 35%;
+    }
+    div.experiencias h3{    
+        color: #232c51; 
+        font-weight: bold; 
+        font-size: 1.4rem; 
+        position: relative;
+        left: 17.5rem;
+        bottom: 3rem;
+        width: 16%;
     }
 
 
