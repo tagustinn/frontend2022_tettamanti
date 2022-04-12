@@ -444,14 +444,14 @@ div.hidden{
     } 
     div.exp{
         display: flex;
+        padding-left: 3rem;
         margin-top: 8rem;
-        justify-content: space-evenly;
         width: 100vw;
         flex-wrap: wrap;
     }
     div.experiencias{
         height: 22rem;
-        width: 40rem;
+        width: 44rem;
         background-color:#FAFAFA;
     }
     div.experiencias p{
