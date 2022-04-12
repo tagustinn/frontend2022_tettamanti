@@ -65,9 +65,7 @@ h2{
     font-size: 3rem;
     padding: 0 4rem;
     }
-    .box{
-
-    }
+    
 section.diferenciacion p{
     color:gray;
     font-size: 1.4rem;
@@ -314,9 +312,10 @@ button:focus{
     }
 }
 
-article{
+footer article{
     color: grey;
     font-size: 1rem;
+    padding-top: 2rem;
 }
 
 div.hidden{
@@ -486,12 +485,5 @@ div.hidden{
     form.hidden{
         width: fit-content;
         gap: 1rem;
-    }
-    form.hidden input{
-        border: none;
-        border-radius: 5rem;
-        height: 4rem;
-        padding:0 2rem; 
-        display: flex;
     }
 }
