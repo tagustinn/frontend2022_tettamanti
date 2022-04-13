@@ -9,13 +9,10 @@
 html{
     font-size: 62.5%;
 }
-body{
+/* body{
     background-image: url('/img/bg-tablet-pattern.svg');
     background-size: contain     ;
-}
-.graficos{
-    width: 100vw;
-}
+} */
 /*Header -- Solo contiene titulo y ///Hamburguesa */
 header{
     display: flex;
@@ -27,10 +24,13 @@ nav.headerDesktop,a.aheaderDesktop{
     display: none;
 }
 /*Seccion Presentacion*/ 
-.graficos{
+.graficoMobile{
     display: flex;
     width:100vw;
     flex-direction: column;
+}
+.graficoDesktop{
+    display: none;
 }
 section.presentacion{
     align-items: center;
@@ -113,9 +113,9 @@ div.titulo h3{
     display: flex;
     font-size: 1.4rem;
     font-weight: bold;
-    height:4rem;
-    margin-left: -1.5rem;
-    padding-left: 3rem;
+    height:5rem;
+    margin-left: -3rem;
+    padding-left: 4rem;
     width: 100vw;
 }
 
@@ -167,8 +167,8 @@ section.opiniones a{
 section.final{
     align-items: center;
     background-color: #F3603B;
-    background-image: url('/img/bg-simplify-section-desktop.svg');
-    background-size: cover;
+    /* background-image: url('/img/bg-simplify-section-desktop.svg');
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     height: 45rem;
@@ -363,11 +363,11 @@ div.hidden{
         text-decoration: none;
     }  
     section.presentacion{
-        order: -1;
-        width:47%;
+        align-items: flex-start;
         height: fit-content; 
         justify-content: flex-start;
-        align-items: flex-start;
+        order: -1;
+        width:47%;
     }
     section.presentacion h1{
         width: 75%;
@@ -383,8 +383,13 @@ div.hidden{
     .presentacion{
         width: 47vw;
     }
-    .graficos{
-        width: 32vw;
+    .graficoMobile{
+        display: none;
+    }
+    .graficoDesktop{
+        display: flex;
+        flex-direction: column;
+        width:32vw;
     }
 
     section.presentacion a{
@@ -398,8 +403,8 @@ div.hidden{
     }
     .box{
         display: flex;
-        width: 79vw;
         margin-top: 5rem;
+        width: 79vw;
     }
     .items{
         width: 50%;
@@ -409,25 +414,25 @@ div.hidden{
     }
     .diferenciacion{
         height: fit-content;
-        width: 60%;
         margin-right: 5rem;
+        width: 60%;
     }
     .diferenciacion h2{
-        text-align: left;
         justify-content: flex-start;
         padding: 0 0 0 1.5rem;
+        text-align: left;
     }
     section.diferenciacion p{
+        padding-left:1.5rem;
         text-align: left;
-        padding-left:1.5rem
     }
     section.opiniones{
         display: none;
     }
     section.opinionesDesktop{
+        align-items: center;
         display:flex;
         flex-direction: column;
-        align-items: center;
     }
     section.opinionesDesktop a{
         align-items: center;    
@@ -444,15 +449,15 @@ div.hidden{
     } 
     div.exp{
         display: flex;
-        padding-left: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top: 8rem;
         width: 100vw;
-        flex-wrap: wrap;
     }
     div.experiencias{
+        background-color:#FAFAFA;
         height: 22rem;
         width: 44rem;
-        background-color:#FAFAFA;
     }
     div.experiencias p{
         color:#B9B9C1;
@@ -460,62 +465,55 @@ div.hidden{
         line-height: 2.7rem;
         padding-right: 2rem;
         padding-top: 6px;
-        text-align: center;
         position: relative;
+        text-align: center;
     }
     div.experiencias img{
-        position: relative;
         bottom: 4rem;
-        left: 17rem;
         height: 35%;
+        left: 17rem;
+        position: relative;
     }
     div.experiencias h3{    
+        bottom: 3rem;
         color: #232c51; 
         font-weight: bold; 
         font-size: 1.4rem; 
-        position: relative;
         left: 17.5rem;
-        bottom: 3rem;
+        position: relative;
         width: 16%;
     }
-
-
-
-
-
-
-
     section.final{
-        width: 100vw;
-        height: 20rem;
-        flex-direction: row;
-        justify-content: space-around;
         align-items: center;
+        flex-direction: row;
+        height: 20rem;
+        justify-content: space-around;
+        width: 100vw;
     }
     section.final p,section.final a{
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
     section.final p{
-        width: 30vw;
         font-size: 3rem;
         text-align: left;
+        width: 30vw;
     }
     section.final a{   
         padding:1.4rem 3rem;
     }
 
     footer{
-        flex-direction: row;
-        width: auto;
-        height: 20rem;
         align-items: center;
+        flex-direction: row;
+        height: 20rem;
+        width: auto;
     }      
     div.iconos {
-        width: 20vw;
-        order: 1;
-        justify-content: center;
         gap: 1rem;
+        justify-content: center;
+        order: 1;
+        width: 20vw;
     }
     footer p{
         padding: 0;
@@ -536,13 +534,13 @@ div.hidden{
         display: none;
     }
     div.hidden{
+        align-items: flex-end;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         padding-right: 3rem;
     }
     form.hidden{
-        width: fit-content;
         gap: 1rem;
+        width: fit-content;
     }
 }
