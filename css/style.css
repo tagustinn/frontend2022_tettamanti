@@ -9,10 +9,10 @@
 html{
     font-size: 62.5%;
 }
-/* body{
+body{
     background-image: url('/img/bg-tablet-pattern.svg');
     background-size: contain     ;
-} */
+} 
 /*Header -- Solo contiene titulo y ///Hamburguesa */
 header{
     display: flex;
@@ -167,8 +167,8 @@ section.opiniones a{
 section.final{
     align-items: center;
     background-color: #F3603B;
-    /* background-image: url('/img/bg-simplify-section-desktop.svg');
-    background-size: cover; */
+    background-image: url('/img/bg-simplify-section-desktop.svg');
+    background-size: cover; 
     display: flex;
     flex-direction: column;
     height: 45rem;
@@ -329,6 +329,7 @@ div.hidden{
     header{
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
     main{
         display: flex;
