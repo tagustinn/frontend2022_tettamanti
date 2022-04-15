@@ -10,7 +10,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-image: url('img/bg-tablet-pattern.svg');
+    background-image: url('/img/bg-tablet-pattern.svg');
     background-size: contain     ;
 } 
 /*Header -- Solo contiene titulo y ///Hamburguesa */
@@ -271,13 +271,12 @@ footer button{
     justify-content: center;
     text-decoration: none;
     width: 7.5rem; }
-/* 
 input::placeholder{ 
     background: linear-gradient(120deg, rgba(24,21,80,1) 47%, rgba(86,86,147,1) 71%, rgba(0,212,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-} */
+} 
 li:hover{
     padding:1rem;
     transition: 0.3s;
@@ -456,7 +455,7 @@ div.hidden{
     div.exp{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         margin-top: 8rem;
         width: 100vw;
     }
