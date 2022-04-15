@@ -242,7 +242,7 @@ footer p{
 }
 
 footer p::before{
-    content: url('/img/puntitos.png');
+    content: url('img/puntitos.png');
     padding-right: 1rem;
 }
 form{
