@@ -1,551 +1,93 @@
 @import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 * {
     box-sizing: border-box;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 html{
     font-size: 62.5%;
 }
-body{
-    background-image: url('/img/bg-tablet-pattern.svg');
-    background-size: contain     ;
-} 
-/*Header -- Solo contiene titulo y ///Hamburguesa */
+
+:root{
+    --color-primario:#D01418;
+    --color-secundario:#222222;
+}
+/*HEADER*/
 header{
+    align-items: center;
+    background-color: var(--color-secundario);
     display: flex;
+    height: 10em;
     justify-content: space-between;
-    margin: 3rem 0;
-    padding: 0 2rem;
 }
-nav.headerDesktop,a.aheaderDesktop{
-    display: none;
-}
-/*Seccion Presentacion*/ 
-.graficoMobile{
-    display: flex;
-    width:100vw;
-    flex-direction: column;
-}
-.graficoDesktop{
-    display: none;
-}
-section.presentacion{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-h1,h2{
-    color:#232c51;
-    font-size:  4rem;
-    padding: 0 1.5rem;
-    text-align: center;
-}
-section.presentacion p{
-    color:gray;
-    font-size: 1.7rem;
-    line-height: 2.7rem;
-    padding: 1rem 3rem 3rem;
-    text-align: center;
-}
-section.presentacion a,section.opiniones a{
-    background-color: #F3603B;
-    border-radius: 50px;
-    color: white; 
-    font-weight: bold;
-    padding:1.4rem 3rem; 
-    margin: 0 0 10rem 0;
-    text-align: center;
-    text-decoration: none;
-    width: 12.4rem; 
-} 
-h2{
-    font-size: 3rem;
-    padding: 0 4rem;
-    }
-
-section.diferenciacion p{
-    color:gray;
-    font-size: 1.4rem;
-    line-height: 2.7rem;
-    padding: 1rem 3rem 3rem;
-    text-align: center;
-}
-section.items{
-    margin-top: 5rem;
-}
-section.items p{
-    color:gray;
-    font-size: 1.4rem;
-    line-height: 2.7rem;
-    padding-right: 2rem;
-    text-align: left;
-}
-.item1,.item2,.item3{
-margin-bottom: 5rem;
-}
-
-section.items a{
-    align-items: center;
-    background-color: #F3603B;
-    border-radius: 30px;
-    color: white;
-    display: flex;
-    font-weight: bold;
-    font-size: 1.7rem;
-    padding: 1.4rem 3rem;
-    justify-content: center;
-    text-decoration: none;
-    width: 7.5rem; 
-    z-index: 1;
-}
-div.titulo{
-    align-items: center;
-    display: flex;
-    justify-content: flex-start;
-}
-div.titulo h3{
-    align-items: center;
-    background-color:rgb(248, 225, 222);
-    color: #232c51;
-    display: flex;
-    font-size: 1.4rem;
-    font-weight: bold;
-    height:5rem;
-    margin-left: -3rem;
-    padding-left: 4rem;
-    width: 100vw;
-}
-
-section.opiniones{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-section.opinionesDesktop{
-    display: none;
-}
-section.opiniones img{
-    height: 6.5rem;
-    margin-top: 5rem;
-    width: 6.5rem;
-    z-index: 1;
-}
-
-div.cuadro{
-    background-color:rgb(249, 249, 249); 
-    height: 20rem;
-}
-
-div.cuadro{
-    margin-top: -3.2rem;
-}
-div.cuadro h3{    
-    color: #232c51;
-    display: flex;
-    font-weight: bold; 
-    font-size: 1.4rem;
-    justify-content: center;
-    margin-top: 5rem;
-}
-div.cuadro p{
-    color:#B9B9C1;
-    font-size: 1.4rem;
-    line-height: 2.7rem;
-    padding-right: 2rem;
-    padding-top: 6px;
-    text-align: center;
-}
-#icon{
-    color: #F3603B;
-}
-section.opiniones a{
-    margin: 3rem 0 4rem;
-}
-section.final{
-    align-items: center;
-    background-color: #F3603B;
-    background-image: url('img/bg-simplify-section-desktop.svg');
-    background-size: cover; 
-    display: flex;
-    flex-direction: column;
-    height: 45rem;
-    justify-content: center;
-}
-section.final p{
-    color: white;
-    font-size:  4rem;
-    font-weight: bold;
-    padding: 0 1.5rem;
-    padding-bottom: 2rem;
-    text-align: center;
-}
-section.final a{
-    align-items: center;
-    background-color: white;
-    border-radius: 30px;
-    color: #F3603B;
-    display: flex;
-    font-weight: bold; 
-    padding: 1.4rem 3rem;
-    justify-content: center;
-    margin-top: 3rem;
-    text-decoration: none;
-    width: 12.4rem;  
-}
-
-footer{
-    align-items: center;
-    background-color: black; 
-    display: flex;
-    flex-direction: column;
-    height: 60rem;
-    justify-content: space-around;
-}
-
-.boxFooter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-nav.nav-footer{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
-}
-ul{
-    display: flex;
-    flex-direction: column;
-    gap:1rem;
-}
-ul a{
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-div.iconos{
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top:5rem ;
-    width: 100vw;
-}
-
-footer p{
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    padding-top: 5rem;
-}
-
-footer p::before{
-    content: url('img/puntitos.png');
-    padding-right: 1rem;
-}
-form{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 3rem 0;
-    width: 100vw;
-}
-form input{
-    border: none;
-    border-radius: 5rem;
-    height: 4rem;
-    padding-left: 1.5rem;
-    width: 65vw;
-}
-footer button{
-    align-items: center;
-    border-radius: 30px;
-    background-color: #F3603B;
-    border: none;
-    color: white;
-    display: flex;
-    font-weight: bold;
-    font-size: 1.7rem;
-    height:4rem;
-    justify-content: center;
-    text-decoration: none;
-    width: 7.5rem; }
-input::placeholder{ 
-    background: linear-gradient(120deg, rgba(24,21,80,1) 47%, rgba(86,86,147,1) 71%, rgba(0,212,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-} 
-li:hover{
-    padding:1rem;
-    transition: 0.3s;
-}
-
-button:hover{
-    background-color:lightgray  ;
-} 
-
-button:focus{
-    background-color:#232c51;
-    color: #F3603B;
-}
-    
-.icon{
-    animation: float 5s ease-in-out infinite;
-}
-.fa-youtube{
-    animation-delay: 1s;
-}
-.fa-twitter{
-    animation-delay: 2s;
-}
-.fa-pinterest{
-    animation-delay: 3s;
-}
-.fa-instagram{
-    animation-delay: 4s;
-}
-@keyframes float{ 
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-1.5rem);
-    }
-    100%{
-        transform:translateY(0);
-    }
-}
-
-footer article{
-    color: grey;
-    font-size: 1rem;
-    padding-top: 2rem;
-}
-
-div.hidden{
-    display: none;
-}
-
-@media (min-width:420px)
+#cart
 {
-    header{
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center ;
-    }
-    .icon-hamburger{
-        display: none;
-    }
-    nav.headerDesktop{
-        color: #242E52;
-        display: flex;
-        font-size: 1.3rem;
-        font-weight: 500;
-        gap: 2rem;
-    }
-    nav.headerDesktop a{
-        text-decoration: none;
-        color: #242E52;
-    }
-    a.aheaderDesktop{
-        align-items: center;    
-        background-color: #F3603B;
-        border-radius: 50px;
-        color: white;   
-        display:flex;
-        font-weight: bold;
-        height:4rem;    
-        justify-content: center;
-        width: 12.4rem; 
-        text-decoration: none;
-    }  
-    section.presentacion{
-        align-items: flex-start;
-        height: fit-content; 
-        justify-content: flex-start;
-        order: -1;
-        width:47%;
-    }
-    section.presentacion h1{
-        width: 75%;
-    }
-    section.presentacion h1, section.presentacion p{
-        text-align: left;
-    } 
-    section.presentacion p{
-        margin: 2rem 0;
-        padding: 0 0 0 1.5rem;
-        width: 75%;
-    }
-    .presentacion{
-        width: 47vw;
-    }
-    .graficoMobile{
-        display: none;
-    }
-    .graficoDesktop{
-        display: flex;
-        flex-direction: column;
-        width:32vw;
-    }
-
-    section.presentacion a{
-        margin: 0 10rem; 
-    }
-    a{
-        transition:450ms;
-    }
-    a:hover{
-        transform: scale(1.3);
-    }
-    .box{
-        display: flex;
-        margin-top: 5rem;
-        width: 79vw;
-    }
-    .items{
-        width: 50%;
-    }
-    section.items{
-        margin: 0rem;
-    }
-    .diferenciacion{
-        height: fit-content;
-        margin-right: 5rem;
-        width: 60%;
-    }
-    .diferenciacion h2{
-        justify-content: flex-start;
-        padding: 0 0 0 1.5rem;
-        text-align: left;
-    }
-    section.diferenciacion p{
-        padding-left:1.5rem;
-        text-align: left;
-    }
-    section.opiniones{
-        display: none;
-    }
-    section.opinionesDesktop{
-        align-items: center;
-        display:flex;
-        flex-direction: column;
-    }
-    section.opinionesDesktop a{
-        align-items: center;    
-        background-color: #F3603B;
-        border-radius: 50px;
-        color: white;   
-        display:flex;
-        font-weight: bold;
-        height:4rem;    
-        justify-content: center;
-        width: 12.4rem; 
-        text-decoration: none;
-        margin: 3rem 0 15rem 0;
-    } 
-    div.exp{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin-top: 8rem;
-        width: 100vw;
-    }
-    div.experiencias{
-        background-color:#FAFAFA;
-        height: 22rem;
-        width: 44rem;
-    }
-    div.experiencias p{
-        color:#B9B9C1;
-        font-size: 1.4rem;
-        line-height: 2.7rem;
-        padding-right: 2rem;
-        padding-top: 6px;
-        position: relative;
-        text-align: center;
-    }
-    div.experiencias img{
-        bottom: 4rem;
-        height: 35%;
-        left: 17rem;
-        position: relative;
-    }
-    div.experiencias h3{    
-        bottom: 3rem;
-        color: #232c51; 
-        font-weight: bold; 
-        font-size: 1.4rem; 
-        left: 17.5rem;
-        position: relative;
-        width: 16%;
-    }
-    section.final{
-        align-items: center;
-        flex-direction: row;
-        height: 20rem;
-        justify-content: space-around;
-        width: 100vw;
-    }
-    section.final p,section.final a{
-        margin: 0;
-        padding: 0;
-    }
-    section.final p{
-        font-size: 3rem;
-        text-align: left;
-        width: 30vw;
-    }
-    section.final a{   
-        padding:1.4rem 3rem;
-    }
-
-    footer{
-        align-items: center;
-        flex-direction: row;
-        height: 20rem;
-        width: auto;
-    }      
-    div.iconos {
-        gap: 1rem;
-        justify-content: center;
-        order: 1;
-        width: 20vw;
-    }
-    footer p{
-        padding: 0;
-    }
-    nav.nav-footer{
-        order: -1;
-    }
-    i.fa-brands{
-        font-size: 2rem;
-    }
-    div.boxFooter{
-        order:-2;
-    }
-    form input{
-        width: fit-content;
-    }
-    article.mobile, form.form{
-        display: none;
-    }
-    div.hidden{
-        align-items: flex-end;
-        display: flex;
-        flex-direction: column;
-        padding-right: 3rem;
-    }
-    form.hidden{
-        gap: 1rem;
-        width: fit-content;
-    }
+    color: var(--color-primario);
+    padding-left:2em;
+    padding-right: 1.5em;
 }
+h1{
+    color:white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+h1::before{
+    content: url('/img/Joystick.png');
+    padding-right: 0.5em;
+    padding-left: 1em;
+    
+}
+h1 span{
+    color: var(--color-primario);
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+header nav ul{
+    display: flex;
+    gap: 1em;
+}
+nav li{
+    list-style: none;
+}
+/*Main
+--------SECTION DESCUENTO---------------*/
+main section.descuento{
+    align-items: center;
+    background-image: url('/img/background.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 10em);
+    justify-content: center;
+    gap: 5em;
+}
+h4{
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+}
+h4 span{
+    color: var(--color-primario);
+}
+section.descuento button{
+    background-color: var(--color-primario);
+    border-radius: 0.5em;
+    border-style:none;
+    color: white;
+    font-size: 2.5em;
+    padding: 0.7em 2.5em;
+}
+
+
+
+
+
+
+
