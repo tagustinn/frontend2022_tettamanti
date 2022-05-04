@@ -11,9 +11,6 @@ html{
     font-size: 62.5%;
 }
 
-header{
-    display: flex;
-}
 .encabezado1{
     height: 2.3rem;
     background: rgb(24,21,80);
@@ -40,29 +37,173 @@ header{
         font-size: 1.5rem; 
         -webkit-background-clip: text;
 }
-.encabezado2{
-    height: 8.1rem;
+@keyframes textclip {
+    to {
+    background-position: 200% center;
+        }
+}
+div.encabezado2{
     background-color: #00669F;
     width: 100vw;
-    margin-top:2.3rem;
     display: flex;
     justify-content: center;
+    padding-top: 3em;
 }
-.encabezado2 p{
+div.encabezado2:hover{
+    padding-bottom: 3em;
+    transition: 0.5s;
+    background-color: #231557   ;
+}
+.encabezado2 h1{
     color: white;
     font-size: 3rem;
     align-items: center;
     display: flex;
     padding-left: 1rem;
 }
-
-.encabezado2 p::before,.encabezado2 p::after{
+.encabezado2 h1::before,.encabezado2 h1::after{
     content: url(/img/tienda.png);
 }
+nav.encabezado3{
+    height: 4em;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav.encabezado3 ul{
+    display: flex;
+    gap:1em;
+    padding-right: 2em;
+}
+nav.encabezado3 ul li{
+    list-style: none;
+}
 
+nav.encabezado3 ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+}
+nav.encabezado3 ul li a:hover{
+    padding-right: 0.6em;
+    transition: 0.5s;
+    color: #ff1361 ;
+}
 
-@keyframes textclip {
-    to {
-    background-position: 200% center;
-        }
+nav.encabezado3 ul li a:active{
+    color: grey;
+}
+/*----------FORMULARIO*----------------*/
+main div.container{
+    width: 66%;
+    background-color: #00669F;
+    border-radius: 4.9em;
+    height: 80em;
+    margin: 2em auto;
+}
+main div.container span{
+    font-size: 4em;
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+}
+main div.container p{
+    font-size: 2em;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+.form{
+    padding: 2em 0em;
+    width: 100%;
+}
+label{
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+}
+input,select{
+    height: 4em;
+    width: 20em;
+    border-radius: 5em;
+    border: none;
+}
+
+input.file{
+    border-radius: 0;
+    padding-top: 2em;
+}
+#file-upload-button{
+    background-color: green;
+}
+div.box{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2em;
+}
+div.boxbox{
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    resize: none;
+    border-radius: 1.5em;
+    padding: 0.5em;
+    padding-right: 2.5em;
+    height: 100%;
+}
+
+input.check{
+    height: auto;
+    width: auto;
+    border:#00669F
+}
+div.check{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 30%;
+}
+
+main div.container div.check span{
+    font-size: 2em;
+    text-align: left;
+}
+main div.container div.check label{
+    font-size: 1.5em;
+}
+button.añadir{
+    margin-top: 2em;
+    background-color: #1CD1B0;
+    color: black;
+    border-radius: 1em;
+    border: none;
+    width: 8em;
+    height: 2em;
+    font-size: 4em;
+    font-weight: 700;
+    position:relative;
+    left: 7em;
+    bottom: 1em;
+}
+
+button.añadir:hover{
+    background-color: #231557;
+    color:#ff1361;
+}
+button.reset{
+    position: relative;
+    right: 15em;
+}
+
+footer{
+    background-color: #ff1361;
+}
+footer p {
+    color: #231557;
+    text-align: center;
+    font-weight: bold;
 }

@@ -13,18 +13,78 @@
             <p> 20% de descuento en todos los productos!</p>
         </div>
         <div class="encabezado2">
-            <p>Hero Store</p>
+            <h1>Hero Store</h1>
         </div>
+        <nav class="encabezado3">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Registrarme</a></li>
+                <li><a href="#">Ingresar</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
+        <div class="container">
+            <span>¡Añade tu super!</span>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            
+            <form class="form" action="#" method="GET" enctype="multipart/form-data">                   
+                <div class="box">
+                    <div class="boxbox">
+                        <label for="name">*Nombre</label>
+                        <input type="text" name="firstname" id="name" placeholder="Ingrese su nombre" minlength="2" max="35" required >       
+                    </div>
+                    <div class="boxbox">
+                        <label for="especie">*Especie</label>
+                        <select required name="especie" id="especie">
+                            <option value="">Seleccione Especie</option>
+                            <option value="humano">Humano</option>
+                            <option value="Alien">Extraterrestre</option>
+                            <option value="Animal">Animal</option>
+                            <option value="Robot">Robot</option>
+                            <option value="Dios">Dios</option>
+                        </select>
+                    </div>    
+                </div>
 
-    </main>
+                <div class="box">
+                    <div class="boxbox">
+                        <label for="fecha">Fecha</label>
+                        <input max="2100-01-01" min="1999-01-01" type="date" name="date" id="fecha" required value="today" >       
+                    </div>
+                    <div class="boxbox">
+                        <label for="foto">Agregar foto</label>
+                        <input class="file" type="file" accept=".jpg,.png,.jpeg">
+                    </div>    
+                </div>
 
+                <div class="box">
+                    <div class="boxbox">
+                        <textarea required spellcheck="true" placeholder="Escriba descricpión de no mas de 500 palabras" maxlength="500" minlength="50" name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="check"> 
+                        <span>Poderes</span>
+                        <label for="volar"><input class="check" id="volar" type="checkbox" name="poderes" value="Volar">Volar</label>
+                        <label for="int"><input checked class="check" id="int" type="checkbox" name="poderes" value="SuperInteligencia">Super Inteligencia</label>
+                        <label for="rayo"><input class="check" id="rayo" type="checkbox" name="poderes" value="Vista de rayo láser">Vista de rayo láser</label>
+                        <label for="bille"><input class="check" id="bille" type="checkbox" name="poderes" value="Billetera gorda">Billetera gorda</label>
+                        <hr>
+                        
+                        <span>Tipo de personaje</span>
+                        <label for="Heroe"><input checked class="check" value="Heroe" name='tipo' id="Heroe" type="radio">Héroe/Heroina</label>
+                        <label for="Villano"><input class="check" value="Villano" name='tipo' id="Villano" type="radio">Villano/Villana</label>
 
+                    </div>    
+                </div>
+                <button class="añadir" type="submit">Añadir</button>
+                <button class="reset" type="reset">Resetear</button>
+            </div>
+            </form>
+        </div>
+    </main> 
 
     <footer>
-
+        <p>Todos los derechos reservados - Agustin Tettamanti  </p>
     </footer>
 
 
