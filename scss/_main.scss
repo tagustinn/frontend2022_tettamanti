@@ -1,0 +1,34 @@
+/*-------------------------------------------------------------------------------------------------
+                        **************** INICIO MAIN ****************
+---------------------------------------------------------------------------------------------------*/
+main{
+    height: 80vh;
+    padding: 1em;
+    h1{
+        font-size: 3em;
+        color: $color-primario;
+        background-color:$color-secundario;
+        font-weight: 700;
+    } 
+}
+
+%btn_general{
+    height:6em;
+    width:12em;
+    border-radius:1em;
+}
+.btn_send{
+    @extend %btn_general;
+    @include colorBoton($color-primario, pink)
+}
+.btn_reset{
+    @extend %btn_general;
+    @include colorBoton($color-secundario, gold)
+}
+/*-------------------------------------------------------------------------------------------------
+                        **************** FIN MAIN ****************
+---------------------------------------------------------------------------------------------------
+
+
+
+*/

@@ -1,0 +1,5 @@
+@mixin colorBoton($colorTexto:white, $colorFondo:black) {
+    color: $colorTexto;
+    background-color: $colorFondo; 
+    
+}

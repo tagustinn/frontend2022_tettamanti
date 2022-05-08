@@ -1,316 +1,85 @@
-@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*sass archivo_origen archivo_destino
 
+sass scss/app.scss css/style.css 
+*/
 * {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-}
-html{
-    font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.contenedor
-{
-    align-items: center;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+body {
+  font-size: 62.5%;
 }
 
-.header
-{
-    background-color: black;
-    font-size: 1rem;
-    height: 20px;
+/*-------------------------------------------------------------------------------------------------
+                        **************** INICIO ENCABEZADO ****************
+---------------------------------------------------------------------------------------------------*/
+header {
+  margin-bottom: 2rem;
 }
-.header1
-{
-    margin-left: 90px;
+header nav {
+  padding-top: 1rem;
 }
-.header2
-{
-    margin-right: 52px; 
-    display: flex;
-    gap: 25PX;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
-
-/*------------ Hasta ACÁ LO DEL HEADER-----------------------*/  
-.encabezado
-{
-    background-color:#F0A83E;
-    height: 62px;   
-    font-size: 1.6rem;
+header nav ul a {
+  padding: 1.5rem;
+  color: white;
+  text-decoration: none;
+  color: crimson;
+  border-radius: 1em;
 }
-.encabezado1
-{
-    margin-left: 40px;
-} 
-.encabezado2
-{
-    margin-right: 40px; 
-    display: flex;
-    gap: 25PX;
-}
-/*------------ Hasta ACÁ LO DEL ENCABEZADO-----------------------*/
-.banner
-{
-    background-image: url('/img/bowl-and-pet-daities-on-green-background\ 1\ \(1\).png');
-    display: flex;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 409px;
-    background-position: center;
-    margin-top: 0px;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content:center;
-    gap:12px;
-}
-.banner1
-{
-    align-items: center;
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    font-size: 3rem;
-    height: 54px;
-    margin-right: 12px;
+header nav ul a:hover {
+  background-color: steelblue;
 }
 
-.banner2
-{
-    font-size: 1.6rem;
-    margin-right: 80px;
+/*-------------------------------------------------------------------------------------------------
+                        **************** FIN ENCABEZADO ****************
+---------------------------------------------------------------------------------------------------
 
-}
-.banner3 a{
-    text-decoration: none;
-    color: white;
-} 
-.banner3
-{
-    align-items: center;
-    background-color: #F0A83E;
-    border-radius: 5px;
-    display: flex;
-    font-size: 1.6rem;
-    height: 49px;
-    justify-content: center;
-    margin-right: 80px;
-    width: 141px;
-    margin-right: 100px;
-}
-/*------------ Hasta ACÁ LO DEL BANNER-----------------------*/
-.destacado
-{
-    height: 230px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.destacado2
-{
-    font-size: 4rem;
-    font-weight: bold;
-}
-.destacado3
-{
-    display: flex;
-    font-size: 1.5rem;
-    gap: 25PX;
-}
-/*------------ Hasta ACÁ LO DEL DESTACADO-----------------------*/
-.items
-{
-    align-items: center;
-    display: flex;
-    justify-content:space-evenly; 
-    margin-top: 50px;
-    width: 100%;  
-}
-.item1{
-    background-image: url('/img/churrasquito\ \(2\).png')
-    ;height: 268px;
-    width: 265px;
-}
-.item2{
-    background-image:url('/img/comedero\ \(2\).png');
-    height: 268px;
-    width: 265px;
-}
-.item3{
-    background-image:url('/img/Huesito\ \(2\).png');
-    height: 268px;
-    width: 265px;
-}
-.texto {
-    position: relative;
-    top: 25rem;
-}
-.item1 p, .item2 p, .item3 p
-{
-    height: 23px;
-    background-color: #FBFAF6;
-    font-size: 1.5rem;
-    font-weight:700;
-    text-align: center;
-}
-.amarillo
-{   color:#F0A83E
-}/*------------ Hasta ACÁ LO DE ITEMS DESTACADOS-----------------------*/
 
-.contactanos
-{
-    display: flex;
-    flex-direction: column;
-    margin-top:80px;
-    align-items: center;
+
+*/
+/*-------------------------------------------------------------------------------------------------
+                        **************** INICIO MAIN ****************
+---------------------------------------------------------------------------------------------------*/
+main {
+  height: 80vh;
+  padding: 1em;
 }
-.formulario
-{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 41px;
-    font-size: 0.9rem;
-    left: 10px;
+main h1 {
+  font-size: 3em;
+  color: steelblue;
+  background-color: crimson;
+  font-weight: 700;
 }
 
-textarea
-{
-    resize: none;
-}
-fieldset
-{
-    display: flex;
-    flex-direction: column;
-    border-color:transparent;
-    font-size: 2.5rem;
-    font-weight: bold;
-} 
-
-input
-{
-    background-color: #3C2313;
-    height: 40px;
-    width: 340px;  
-    border-radius: 15px;
-    color: white;
-    font-size: 0.9rem;
-}
-h2{
-    font-size: 2.5rem;
-}
-.botones
-{
-    display: flex;
-    justify-content: center;
-    gap:20px
+.btn_reset, .btn_send {
+  height: 6em;
+  width: 12em;
+  border-radius: 1em;
 }
 
-div.botones button{
-    font-size: 1.6rem;
-    height: 34px;
-    width: 110px; 
-    border-radius: 15px;
-    color: white;
-    margin-bottom: 75px;
-    border: none;
-}
-.boton-gris
-{
-    background-color: #8A8787;
-}
-.boton-naranja
-{
-    background-color: #F0A83E;
-
-}
-/*------------ Hasta ACÁ LO DEL FORMULARIO CONTACT-----------------------*/
-div.footer1
-{
-    display: flex;  
-    height: 60px;
-    background-color:#F0A83E; 
-    align-items: center;
-    justify-content: space-between;
-}
-div.footer1 p
-{
-    font-size: 2rem;
-    color: white;
-    font-weight: bold;
-    margin-left: 23px;
+.btn_send {
+  color: steelblue;
+  background-color: pink;
 }
 
-div.footer1 input
-{
-    background-color:white;
-    color: #A0A0A0; 
-    border: none;
+.btn_reset {
+  color: crimson;
+  background-color: gold;
 }
 
-.boton-marron
-{
-    background-color:#3C2313;
-    height: 34px;
-    width: 70px; 
-    border: none;
-    color: white;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    margin-right: 30px;
-}
+/*-------------------------------------------------------------------------------------------------
+                        **************** FIN MAIN ****************
+---------------------------------------------------------------------------------------------------
 
-div.footer2
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 284px;
-    background-color: #3C2313;
-}
 
-p.grande
-{
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 20px;
-}
-p.chico
-{
-    color:#8A8787;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 50px;
-}
 
-.informacion
-{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-div.footer2 img
-{
-    margin-right: 70px;
-}
+*/
 
-div.footer3
-{   
-    height: 20px;
-    background-color:black;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*# sourceMappingURL=style.css.map */
